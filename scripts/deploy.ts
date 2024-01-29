@@ -3,7 +3,7 @@ import * as fs from 'fs';
 
 async function main() {
   const Burn = await ethers.getContractFactory("Burn");
-  const burn = await Burn.deploy();
+  const burn = await Burn.deploy({gasPrice: 500000000000});
   await burn.waitForDeployment();
 
   const address = await burn.getAddress();

@@ -2,6 +2,7 @@ import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 
 import { ethers } from "ethers";
+import { HardhatRuntimeEnvironment } from "hardhat/types";
 
 const config: HardhatUserConfig = {
    networks: {
@@ -63,5 +64,6 @@ const config: HardhatUserConfig = {
   //   ],
   // },
 };
+
 
 export default config;
