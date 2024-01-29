@@ -2,7 +2,7 @@
 pragma solidity ^0.8.9;
 
 
-contract Lock {
+contract Burn {
     uint public totalBurned = 0;
 
     event Burned(address indexed from, uint amount);
